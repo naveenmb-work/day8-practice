@@ -1,6 +1,8 @@
-name = input("Enter  name: ")
+def greet(name):
+    if not name:
+        print("Name cannot be empty")
+    else:
+        print(f"Hello, {name}!")
 
-if name == "":
-	print("error")
-else:
-	print("Hello" + name)
+name = input("Enter your name: ").strip()
+greet(name)
