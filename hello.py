@@ -1,4 +1,6 @@
-name = input("Enter your name: ")
+name = input("Enter  name: ")
 
-def greet(name): print(f"Hello, {name}!")
-greet(name)
+if name == "":
+	print("error")
+else:
+	print("Hello" + name)
